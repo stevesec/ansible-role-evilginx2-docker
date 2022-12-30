@@ -12,7 +12,7 @@ phishlet: 'o365'
 evilginx2_entry_point: "/bin/evilginx -p /phishlets -c /config -t /templates -debug -developer -g /opt/docker/gophish/data/gophish.db"
 
 evilginx2_docker_labels: {}
-evilginx2_docker_image: "ghcr.io/warhorse/docker-evilginx2:master"
+evilginx2_docker_image: "ghcr.io/stevesec/docker-evilginx2:master"
 evilginx2_docker_network: "evilginx2"
 evilginx2_network_ipam_temp: "{{ evilginx2_network_ipam | default({}) }}"
 evilginx2_network_ipam_subnet: "{{
