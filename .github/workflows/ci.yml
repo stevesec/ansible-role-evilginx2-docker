@@ -10,7 +10,7 @@ name: CI
 
 defaults:
   run:
-    working-directory: 'warhorse.evilginx2_docker'
+    working-directory: 'stevesec.evilginx2_docker'
 
 jobs:
 
@@ -21,7 +21,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: 'warhorse.evilginx2_docker'
+          path: 'stevesec.evilginx2_docker'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
@@ -48,7 +48,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: 'warhorse.evilginx2_docker'
+          path: 'stevesec.evilginx2_docker'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
