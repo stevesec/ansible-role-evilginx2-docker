@@ -9,7 +9,7 @@ evilginx_domain: 'example.com'
 redirect_domain: 'redirect.com'
 phishlet: 'o365'
 
-evilginx2_entry_point: "/bin/evilginx -p /phishlets -c /config -t /templates -debug -developer"
+evilginx2_entry_point: "/bin/evilginx -p /phishlets -c /config -t /templates -debug -developer -g /opt/docker/gophish/data/gophish.db"
 
 evilginx2_docker_labels: {}
 evilginx2_docker_image: "ghcr.io/warhorse/docker-evilginx2:master"
