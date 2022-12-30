@@ -8,6 +8,7 @@
   - '{{ evilginx2_dir }}/phishlets'
   - '{{ evilginx2_dir }}/config'
   - '{{ evilginx2_dir }}/templates'
+  - "/opt/docker/gophish/data/gophish.db"
 
 - name: Create Phishlet templates
   template:
@@ -46,6 +47,7 @@
       - "{{ evilginx2_dir }}/config:/config"
       - "{{ evilginx2_dir }}/phishlets:/phishlets"
       - "{{ evilginx2_dir }}/templates:/templates"
+      - "/opt/docker/gophish/data/gophish.db"
     networks:
       - name: "{{ evilginx2_docker_network }}"
     purge_networks: true
