@@ -19,4 +19,4 @@
       failed_when: systemctl_status.rc > 1
 
   roles:
-    - role: warhorse.evilginx2_docker
+    - role: stevesec.evilginx2_docker
