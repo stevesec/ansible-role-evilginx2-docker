@@ -8,7 +8,7 @@
   - '{{ evilginx2_dir }}/phishlets'
   - '{{ evilginx2_dir }}/config'
   - '{{ evilginx2_dir }}/templates'
-  - "/opt/docker/gophish/data/gophish.db"
+  - "{{ evilginx2_db_dir }}"
 
 - name: Create Phishlet templates
   template:
