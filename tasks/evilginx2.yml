@@ -8,7 +8,7 @@
   - '{{ evilginx2_dir }}/phishlets'
   - '{{ evilginx2_dir }}/config'
   - '{{ evilginx2_dir }}/templates'
-  - "{{ evilginx2_db_dir }}"
+  - "{{ evilginx2_db_location }}"
 
 - name: Create Phishlet templates
   template:
