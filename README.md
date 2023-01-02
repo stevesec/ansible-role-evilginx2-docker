@@ -1,19 +1,19 @@
-Ansible Cobalt Strike (Docker)
+Ansible Evilginx2 (Docker)
 =========
 
-[![CI](https://github.com/warhorse/ansible-role-evilginx2-docker/workflows/CI/badge.svg?event=push)](https://github.com/warhorse/ansible-role-evilginx2-docker/actions?query=workflow%3ACI)
-[![Release](https://github.com/warhorse/ansible-role-evilginx2-docker/actions/workflows/release.yml/badge.svg)](https://github.com/warhorse/ansible-role-evilginx2-docker/actions/workflows/release.yml)
-[![warhorse.evilginx2_docker](https://img.shields.io/ansible/role/57563)](https://galaxy.ansible.com/warhorse/evilginx2_docker)
-[![warhorse.cobaltstrike_docker](https://img.shields.io/ansible/quality/57563)](https://galaxy.ansible.com/warhorse/evilginx2_docker)
-[![warhorse.cobaltstrike_docker](https://img.shields.io/ansible/role/d/57563)](https://galaxy.ansible.com/warhorse/evilginx2_docker)
-![License](https://img.shields.io/github/license/warhorse/ansible-role-evilginx2-docker)
-![Commit](https://img.shields.io/github/last-commit/warhorse/ansible-role-evilginx2-docker)
+[![CI](https://github.com/stevesec/ansible-role-evilginx2-docker/workflows/CI/badge.svg?event=push)](https://github.com/stevesec/ansible-role-evilginx2-docker/actions?query=workflow%3ACI)
+[![Release](https://github.com/stevesec/ansible-role-evilginx2-docker/actions/workflows/release.yml/badge.svg)](https://github.com/stevesec/ansible-role-evilginx2-docker/actions/workflows/release.yml)
+[![warhorse.evilginx2_docker](https://img.shields.io/ansible/role/57563)](https://galaxy.ansible.com/stevesec/evilginx2_docker)
+[![warhorse.cobaltstrike_docker](https://img.shields.io/ansible/quality/57563)](https://galaxy.ansible.com/stevesec/evilginx2_docker)
+[![warhorse.cobaltstrike_docker](https://img.shields.io/ansible/role/d/57563)](https://galaxy.ansible.com/stevesec/evilginx2_docker)
+![License](https://img.shields.io/github/license/stevesec/ansible-role-evilginx2-docker)
+![Commit](https://img.shields.io/github/last-commit/stevesec/ansible-role-evilginx2-docker)
 
 ![Evilginx2 Logo](./images/evilginx2_logo.png "Evilginx2 Logo")
 
 Install evilginx2 in (Docker)
 
-This role is part of the Warhorse Automation Framework. This role can be used with Warhorse or as a standalone role.
+This role is part of the Were-Wolf Automation Framework. This role can be used with Were-Wolf or as a standalone role.
 
 Docker Image
 -------------
