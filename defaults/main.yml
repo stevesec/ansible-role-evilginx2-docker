@@ -4,12 +4,13 @@ evilginx2_container_name: "evilginx2"
 
 evilginx2_phishlet_folder: "templates/phishlets"
 evilginx2_config_location: "config.yaml.j2"
+evilginx2_db_location: "/opt/docker/gophish/data/gophish.db"
 
 evilginx_domain: 'example.com'
 redirect_domain: 'redirect.com'
 phishlet: 'o365'
 
-evilginx2_entry_point: "/bin/evilginx -p /phishlets -c /config -t /templates -debug -developer -g /opt/docker/gophish/data/gophish.db"
+evilginx2_entry_point: "/bin/evilginx -p /phishlets -c /config -t /templates -debug -developer -g {{ evilginx2_db_location }}"
 
 evilginx2_docker_labels: {}
 evilginx2_docker_image: "ghcr.io/stevesec/docker-evilginx2:master"
