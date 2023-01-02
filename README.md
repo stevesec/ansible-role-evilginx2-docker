@@ -18,7 +18,7 @@ This role is part of the Warhorse Automation Framework. This role can be used wi
 Docker Image
 -------------
 
-[ghcr.io/warhorse/docker-evilginx2](https://github.com/warhorse/docker-evilginx2)
+[ghcr.io/stevesec/docker-evilginx2](https://github.com/stevesec/docker-evilginx2)
 
 Role Variables
 --------------
@@ -32,14 +32,6 @@ A list of all the variables can be found in ./defaults/main.yml.
 `evilginx2_hostname` - Cobalt Strike container hostname
 
 `evilginx2_container_name` - Cobalt Strike container name 
-
-`cs_key` - Cobalt Strike teamserver license key (REQUIRED)
-
-`cs_password` - Cobalt Strike teamserver password (REQUIRED)
-
-`cs_exp_date` - Cobalt Strike becaon expiration date (REQUIRED)
-
-`cs_profile_location` - Location of your Cobalt Strike profile file
 
 `evilginx2_docker_network` Cobalt Strike container docker network
 
@@ -55,7 +47,7 @@ Install
 ------------
 
 ```shell
-ansible-galaxy install warhorse.cobaltstrike_docker
+ansible-galaxy install stevesec.evilginx2_docker
 ```
 
 Example Playbook
@@ -64,25 +56,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   roles:
-      - { role: warhorse.evilginx2_docker }
-```
-
-Example Vars
-----------------
-
-```yaml
-cs_hostname: "cobaltstrike"
-cs_container_name: "cobaltstrike"
-cs_key: '000-000-000-000-000'
-cs_password: 'Password'
-cs_exp_date: '2020-12-20'
-cs_profile_location: 'clean.profile.j2'
-cs_docker_network: "cobaltstrike"
-cs_dir: '/opt/docker/cobaltstrike'
-cs_ports:
-  - "50050:50050"
-  - "80:80"
-  - "443:443"
+      - { role: stevesec.evilginx2_docker }
 ```
 
 License
@@ -93,4 +67,4 @@ MIT/BSD
 Author Information
 ------------------
 
-Ralph May
+Steve Nelson
